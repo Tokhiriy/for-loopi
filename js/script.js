@@ -1,78 +1,24 @@
-// First way
-/* for (let i =1; i <= 10; i++){
-    console.log(i);
-} */
 
-// second way
+/* let age = prompt('Yoshingiz nechchida');
 
-/* let i = 0;
-do {
-    console.log(i);
-    i++
+if(age < 18) {
+    alert('Xali erta');
+} else if(age > 80){
+    alert('Uje kech');
 
-} while (i <= 10); */
+} else{alert('Xush kelibsiz')}
+ */
 
-// third way
+let age = +prompt('Yoshingiz nechchida') // switch case da malumot string qaytgani uchun uni raqamga uzgartirish uchun promt oldiga + quyamiz
 
-/* let i = 0;
-while (i <= 10){
-    console.log(i);
-    i++;
-} */
+switch (age){
+    case 18:
+        alert('Sizning yoshingiz 18da')
+        break
+    
+    case 50:
+        alert('Sizning yoshingiz 50da')
 
-
-
-// first way
-
-
-let answers =[]
-
-let questions = [
-    'What is youe name',
-    'What is your phone',
-    'How old are you'
-
-]
- for (let i = 0; i <questions.length; i++) {
-    answers[i] = prompt(questions[i])
+    default:
+        alert('Sizning yoshingiz nomalum')
 }
-console.log(answers)
-
-// second way
-
-/* 
-let answers =[]
-
-let questions = [
-    'What is youe name',
-    'What is your phone',
-    'How old are you'
-
-]
-let i = 0;
-
-do{
-    answers[i] = prompt (questions[i]);
-    console.log(answers); 
-    i++;   
-
-    } while( i < questions.length); */
-
-// third way
-
-/* let answers =[]
-
-let questions = [
-    'What is youe name',
-    'What is your phone',
-    'How old are you'
-
-]
-
-let i = 0;
-while(i < questions.length){
-    answers[i] = prompt(questions[i]);
-    console.log(answers);
-    i++
-} */
-
